@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30743703492",
+    "project_id": "spaceexplorer2-cc007",
+    "storage_bucket": "spaceexplorer2-cc007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30743703492:android:0a423a084724cd0d5bbe91",
+        "android_client_info": {
+          "package_name": "com.mycompany.spaceexplorer2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcBSLItc5CjBt4yoBWHvTTNSzAEU99bLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
