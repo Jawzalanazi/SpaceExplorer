@@ -23,11 +23,13 @@ Our game shines because of our vision to make learning fun; Space Explorer is th
   Supervisor: Dr. Lamees Alhazzaa   ͙͘͡★ ͙͘͡★͙͘͡
 
    Shaden Almudbal (Scrum Master)-͟͟͞☆
-
-      Heba Almutiri -͟͟͞☆
+   
 
    Lara Aleidan͟͟͞☆
-Jawza Alanazi-͟͟͞☆
+   
+   Heba Almutiri-͟͟͞☆
+   
+   Jawza Alanazi-͟͟͞☆
 
   Maha Algahtani.-͟͟͞☆
 
