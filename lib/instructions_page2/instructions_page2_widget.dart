@@ -51,59 +51,56 @@ class _InstructionsPage2WidgetState extends State<InstructionsPage2Widget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: SafeArea(
-          top: true,
-          child: Stack(
-            children: [
-              Align(
-                alignment: const AlignmentDirectional(0.0, 0.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/Background.jpg',
-                    width: 393.0,
-                    height: 852.0,
-                    fit: BoxFit.cover,
-                  ),
+        body: Stack(
+          children: [
+            Align(
+              alignment: const AlignmentDirectional(0.0, 0.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/Background.jpg',
+                  width: 393.0,
+                  height: 852.0,
+                  fit: BoxFit.cover,
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, -0.85),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/vnimc_1.png',
-                    width: 435.0,
-                    height: 134.0,
-                    fit: BoxFit.cover,
-                  ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.0, -0.85),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/vnimc_1.png',
+                  width: 435.0,
+                  height: 134.0,
+                  fit: BoxFit.cover,
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(0.63, -0.58),
-                child: InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed('Inctractions_Page3');
-                  },
-                  child: Text(
-                    'Next!',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'digital tech',
-                          color: FlutterFlowTheme.of(context).alternate,
-                          fontWeight: FontWeight.w600,
-                          fontStyle: FontStyle.italic,
-                          decoration: TextDecoration.underline,
-                          useGoogleFonts: false,
-                        ),
-                  ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.63, -0.58),
+              child: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.pushNamed('Inctractions_Page3');
+                },
+                child: Text(
+                  'Next!',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'digital tech',
+                        color: FlutterFlowTheme.of(context).alternate,
+                        fontWeight: FontWeight.w600,
+                        fontStyle: FontStyle.italic,
+                        decoration: TextDecoration.underline,
+                        useGoogleFonts: false,
+                      ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

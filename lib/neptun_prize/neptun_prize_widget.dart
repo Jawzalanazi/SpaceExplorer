@@ -51,24 +51,24 @@ class _NeptunPrizeWidgetState extends State<NeptunPrizeWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: SafeArea(
-          top: true,
-          child: Stack(
-            children: [
-              Align(
-                alignment: const AlignmentDirectional(0.0, 0.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/Background.jpg',
-                    width: 393.0,
-                    height: 852.0,
-                    fit: BoxFit.cover,
-                  ),
+        body: Stack(
+          children: [
+            Align(
+              alignment: const AlignmentDirectional(0.0, 0.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/Background.jpg',
+                  width: 393.0,
+                  height: 852.0,
+                  fit: BoxFit.cover,
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(-0.02, -0.12),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.0, -1.0),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 250.0, 0.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -79,8 +79,11 @@ class _NeptunPrizeWidgetState extends State<NeptunPrizeWidget> {
                   ),
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(0.03, -0.74),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.03, -0.74),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                 child: Text(
                   'YOU WON NEPTUNE STAR',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -90,75 +93,73 @@ class _NeptunPrizeWidgetState extends State<NeptunPrizeWidget> {
                       ),
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(-0.01, 0.76),
-                child: FFButtonWidget(
-                  onPressed: () async {
-                    context.pushNamed('Credits');
-                  },
-                  text: 'Credits',
-                  options: FFButtonOptions(
-                    height: 40.0,
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                    iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).primary,
-                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Manrope',
-                          color: Colors.white,
-                          fontStyle: FontStyle.italic,
-                        ),
-                    elevation: 3.0,
-                    borderSide: const BorderSide(
-                      color: Colors.transparent,
-                      width: 1.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(-0.01, 0.62),
-                child: FFButtonWidget(
-                  onPressed: () async {
-                    context.pushNamed('solarsystem');
-                  },
-                  text: 'Solar System',
-                  options: FFButtonOptions(
-                    height: 40.0,
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                    iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).primary,
-                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Manrope',
-                          color: Colors.white,
-                          fontStyle: FontStyle.italic,
-                        ),
-                    elevation: 3.0,
-                    borderSide: const BorderSide(
-                      color: Colors.transparent,
-                      width: 1.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(-0.02, 0.44),
-                child: Text(
-                  'Go To',
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Open Sans',
-                        fontSize: 20.0,
+            ),
+            Align(
+              alignment: const AlignmentDirectional(-0.01, 0.76),
+              child: FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('Credits');
+                },
+                text: 'Credits',
+                options: FFButtonOptions(
+                  height: 40.0,
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  iconPadding:
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Manrope',
+                        color: Colors.white,
                         fontStyle: FontStyle.italic,
                       ),
+                  elevation: 3.0,
+                  borderSide: const BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
-            ],
-          ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(-0.01, 0.62),
+              child: FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('solarsystem');
+                },
+                text: 'Solar System',
+                options: FFButtonOptions(
+                  height: 40.0,
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  iconPadding:
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Manrope',
+                        color: Colors.white,
+                        fontStyle: FontStyle.italic,
+                      ),
+                  elevation: 3.0,
+                  borderSide: const BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(-0.02, 0.44),
+              child: Text(
+                'Go To',
+                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Open Sans',
+                      fontSize: 20.0,
+                      fontStyle: FontStyle.italic,
+                    ),
+              ),
+            ),
+          ],
         ),
       ),
     );

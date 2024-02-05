@@ -52,103 +52,99 @@ class _Uranus1WidgetState extends State<Uranus1Widget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: SafeArea(
-          top: true,
-          child: Stack(
-            children: [
-              Align(
-                alignment: const AlignmentDirectional(0.0, 0.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/Background.jpg',
-                    width: 393.0,
-                    height: 852.0,
-                    fit: BoxFit.cover,
-                  ),
+        body: Stack(
+          children: [
+            Align(
+              alignment: const AlignmentDirectional(0.0, 0.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/Background.jpg',
+                  width: 393.0,
+                  height: 852.0,
+                  fit: BoxFit.cover,
                 ),
               ),
-              FlutterFlowSwipeableStack(
-                onSwipeFn: (index) {},
-                onLeftSwipe: (index) {},
-                onRightSwipe: (index) {},
-                onUpSwipe: (index) {},
-                onDownSwipe: (index) {},
-                itemBuilder: (context, index) {
-                  return [
-                    () => ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.asset(
-                            'assets/images/3a9k2_3.png',
-                            width: double.infinity,
-                            height: double.infinity,
-                            fit: BoxFit.cover,
-                          ),
+            ),
+            FlutterFlowSwipeableStack(
+              onSwipeFn: (index) {},
+              onLeftSwipe: (index) {},
+              onRightSwipe: (index) {},
+              onUpSwipe: (index) {},
+              onDownSwipe: (index) {},
+              itemBuilder: (context, index) {
+                return [
+                  () => ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/3a9k2_3.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
                         ),
-                    () => ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.asset(
-                            'assets/images/fijek_4.png',
-                            width: double.infinity,
-                            height: double.infinity,
-                            fit: BoxFit.cover,
-                          ),
+                      ),
+                  () => ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/fijek_4.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
                         ),
-                    () => ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.asset(
-                            'assets/images/dfjsb_6.png',
-                            width: double.infinity,
-                            height: double.infinity,
-                            fit: BoxFit.cover,
-                          ),
+                      ),
+                  () => ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/dfjsb_6.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
                         ),
-                    () => ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.asset(
-                            'assets/images/2emqy_5.png',
-                            width: double.infinity,
-                            height: double.infinity,
-                            fit: BoxFit.cover,
-                          ),
+                      ),
+                  () => ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/2emqy_5.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
                         ),
-                  ][index]();
+                      ),
+                ][index]();
+              },
+              itemCount: 4,
+              controller: _model.swipeableStackController,
+              loop: false,
+              cardDisplayCount: 3,
+              scale: 0.9,
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.02, 0.95),
+              child: FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('UranusQuiz1');
                 },
-                itemCount: 4,
-                controller: _model.swipeableStackController,
-                loop: false,
-                cardDisplayCount: 3,
-                scale: 0.9,
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.02, 0.95),
-                child: FFButtonWidget(
-                  onPressed: () async {
-                    context.pushNamed('UranusQuiz1');
-                  },
-                  text: 'Start the Challenges',
-                  options: FFButtonOptions(
-                    height: 40.0,
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                    iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).primary,
-                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Manrope',
-                          color: Colors.white,
-                        ),
-                    elevation: 3.0,
-                    borderSide: const BorderSide(
-                      color: Colors.transparent,
-                      width: 1.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
+                text: 'Start the Challenges',
+                options: FFButtonOptions(
+                  height: 40.0,
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  iconPadding:
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Manrope',
+                        color: Colors.white,
+                      ),
+                  elevation: 3.0,
+                  borderSide: const BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
                   ),
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

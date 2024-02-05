@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'uranus2_widget.dart' show Uranus2Widget;
+import 'rightscore33_widget.dart' show Rightscore33Widget;
 import 'package:flutter/material.dart';
 
-class Uranus2Model extends FlutterFlowModel<Uranus2Widget> {
+class Rightscore33Model extends FlutterFlowModel<Rightscore33Widget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'starun_prize_widget.dart' show StarunPrizeWidget;
+import 'sat_pi_c_q_widget.dart' show SatPiCQWidget;
 import 'package:flutter/material.dart';
 
-class StarunPrizeModel extends FlutterFlowModel<StarunPrizeWidget> {
+class SatPiCQModel extends FlutterFlowModel<SatPiCQWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

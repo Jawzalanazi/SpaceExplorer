@@ -241,9 +241,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const UranusPrizeWidget(),
         ),
         FFRoute(
-          name: 'starunPrize',
+          name: 'SatPrize',
           path: '/saturnPrize',
-          builder: (context, params) => const StarunPrizeWidget(),
+          builder: (context, params) => const SatPrizeWidget(),
         ),
         FFRoute(
           name: 'UranusQuiz1',
@@ -259,11 +259,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Uranus1',
           path: '/uranus1',
           builder: (context, params) => const Uranus1Widget(),
-        ),
-        FFRoute(
-          name: 'Uranus2',
-          path: '/uranus2',
-          builder: (context, params) => const Uranus2Widget(),
         ),
         FFRoute(
           name: 'UranusQuiz1_RightScore',
@@ -306,11 +301,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const UranusQuiz5RightScoreWidget(),
         ),
         FFRoute(
-          name: 'UranusQuiz5',
-          path: '/uranusQuiz5',
-          builder: (context, params) => const UranusQuiz5Widget(),
-        ),
-        FFRoute(
           name: 'Jupiterinfo',
           path: '/jupiterinfo',
           builder: (context, params) => const JupiterinfoWidget(),
@@ -339,6 +329,76 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Rightscoreneptune',
           path: '/rightscoreneptune',
           builder: (context, params) => const RightscoreneptuneWidget(),
+        ),
+        FFRoute(
+          name: 'picsJupiter',
+          path: '/picsJupiter',
+          builder: (context, params) => const PicsJupiterWidget(),
+        ),
+        FFRoute(
+          name: 'Rightscorejupiter',
+          path: '/rightscorejupiter',
+          builder: (context, params) => const RightscorejupiterWidget(),
+        ),
+        FFRoute(
+          name: 'Jupiterprize',
+          path: '/jupiterprize',
+          builder: (context, params) => const JupiterprizeWidget(),
+        ),
+        FFRoute(
+          name: 'rightscore33',
+          path: '/rightscore33',
+          builder: (context, params) => const Rightscore33Widget(),
+        ),
+        FFRoute(
+          name: 'SaturnWelcome',
+          path: '/saturnWelcome',
+          builder: (context, params) => const SaturnWelcomeWidget(),
+        ),
+        FFRoute(
+          name: 'SaturnInfo',
+          path: '/saturnInfo',
+          builder: (context, params) => const SaturnInfoWidget(),
+        ),
+        FFRoute(
+          name: 'SatrunTF',
+          path: '/satrunTF',
+          builder: (context, params) => const SatrunTFWidget(),
+        ),
+        FFRoute(
+          name: 'MCSatrun',
+          path: '/mCSatrun',
+          builder: (context, params) => const MCSatrunWidget(),
+        ),
+        FFRoute(
+          name: 'SatPiCQ',
+          path: '/satPiCQ',
+          builder: (context, params) => const SatPiCQWidget(),
+        ),
+        FFRoute(
+          name: 'SatMCrigh',
+          path: '/satMCrigh',
+          builder: (context, params) => const SatMCrighWidget(),
+        ),
+        FFRoute(
+          name: 'SatTFright',
+          path: '/satTFright',
+          builder: (context, params) => const SatTFrightWidget(),
+        ),
+        FFRoute(
+          name: 'SatPICright',
+          path: '/satPICright',
+          builder: (context, params) => const SatPICrightWidget(),
+        ),
+        FFRoute(
+          name: 'SatMOVEtoMc',
+          path: '/satMOVEtoMc',
+          builder: (context, params) => const SatMOVEtoMcWidget(),
+        ),
+        FFRoute(
+          name: 'SatMOVEtoPic',
+          path: '/satMOVEtoPic',
+          builder: (context, params) => const SatMOVEtoPicWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

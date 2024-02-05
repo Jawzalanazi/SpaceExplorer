@@ -51,98 +51,95 @@ class _InstructionsPage9WidgetState extends State<InstructionsPage9Widget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: SafeArea(
-          top: true,
-          child: Stack(
-            children: [
-              Align(
-                alignment: const AlignmentDirectional(0.0, 0.0),
+        body: Stack(
+          children: [
+            Align(
+              alignment: const AlignmentDirectional(0.0, 0.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/Background.jpg',
+                  width: 393.0,
+                  height: 852.0,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.0, -0.8),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/2emqy_5.png',
+                  width: 435.0,
+                  height: 118.0,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(1.12, -0.32),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/dfjsb_6.png',
+                  width: 385.0,
+                  height: 128.0,
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.0, 0.26),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/Background.jpg',
-                    width: 393.0,
-                    height: 852.0,
+                    'assets/images/x7hc1_7.png',
+                    width: 668.0,
+                    height: 163.0,
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, -0.8),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/2emqy_5.png',
-                    width: 435.0,
-                    height: 118.0,
-                    fit: BoxFit.cover,
-                  ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.44, 0.77),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/k7eg7_8.png',
+                  width: 342.0,
+                  height: 130.0,
+                  fit: BoxFit.cover,
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(1.12, -0.32),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/dfjsb_6.png',
-                    width: 385.0,
-                    height: 128.0,
-                    fit: BoxFit.cover,
-                  ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.47, 0.76),
+              child: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.pushNamed('solarsystem');
+                },
+                child: Text(
+                  'Next!',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'digital tech',
+                        color: FlutterFlowTheme.of(context).alternate,
+                        fontWeight: FontWeight.w600,
+                        fontStyle: FontStyle.italic,
+                        decoration: TextDecoration.underline,
+                        useGoogleFonts: false,
+                      ),
                 ),
               ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, 0.26),
-                child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      'assets/images/x7hc1_7.png',
-                      width: 668.0,
-                      height: 163.0,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.44, 0.77),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/k7eg7_8.png',
-                    width: 342.0,
-                    height: 130.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.47, 0.76),
-                child: InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    context.pushNamed('solarsystem');
-                  },
-                  child: Text(
-                    'Next!',
-                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'digital tech',
-                          color: FlutterFlowTheme.of(context).alternate,
-                          fontWeight: FontWeight.w600,
-                          fontStyle: FontStyle.italic,
-                          decoration: TextDecoration.underline,
-                          useGoogleFonts: false,
-                        ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

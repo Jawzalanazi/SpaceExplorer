@@ -41,12 +41,11 @@ export '/instructions_page6/instructions_page6_widget.dart'
     show InstructionsPage6Widget;
 export '/neptun_prize/neptun_prize_widget.dart' show NeptunPrizeWidget;
 export '/uranus_prize/uranus_prize_widget.dart' show UranusPrizeWidget;
-export '/starun_prize/starun_prize_widget.dart' show StarunPrizeWidget;
+export '/sat_prize/sat_prize_widget.dart' show SatPrizeWidget;
 export '/uranus_quiz1/uranus_quiz1_widget.dart' show UranusQuiz1Widget;
 export '/welcome_to_uranus/welcome_to_uranus_widget.dart'
     show WelcomeToUranusWidget;
 export '/uranus1/uranus1_widget.dart' show Uranus1Widget;
-export '/uranus2/uranus2_widget.dart' show Uranus2Widget;
 export '/uranus_quiz1_right_score/uranus_quiz1_right_score_widget.dart'
     show UranusQuiz1RightScoreWidget;
 export '/uranus_quiz2/uranus_quiz2_widget.dart' show UranusQuiz2Widget;
@@ -60,7 +59,6 @@ export '/uranus_quiz4_right_score/uranus_quiz4_right_score_widget.dart'
     show UranusQuiz4RightScoreWidget;
 export '/uranus_quiz5_right_score/uranus_quiz5_right_score_widget.dart'
     show UranusQuiz5RightScoreWidget;
-export '/uranus_quiz5/uranus_quiz5_widget.dart' show UranusQuiz5Widget;
 export '/jupiterinfo/jupiterinfo_widget.dart' show JupiterinfoWidget;
 export '/m_c_q_jupiter/m_c_q_jupiter_widget.dart' show MCQJupiterWidget;
 export '/welcome_jupiter/welcome_jupiter_widget.dart' show WelcomeJupiterWidget;
@@ -68,3 +66,19 @@ export '/t_f_jupiter/t_f_jupiter_widget.dart' show TFJupiterWidget;
 export '/right_score_jup/right_score_jup_widget.dart' show RightScoreJupWidget;
 export '/rightscoreneptune/rightscoreneptune_widget.dart'
     show RightscoreneptuneWidget;
+export '/pics_jupiter/pics_jupiter_widget.dart' show PicsJupiterWidget;
+export '/rightscorejupiter/rightscorejupiter_widget.dart'
+    show RightscorejupiterWidget;
+export '/jupiterprize/jupiterprize_widget.dart' show JupiterprizeWidget;
+export '/rightscore33/rightscore33_widget.dart' show Rightscore33Widget;
+export '/saturn_welcome/saturn_welcome_widget.dart' show SaturnWelcomeWidget;
+export '/saturn_info/saturn_info_widget.dart' show SaturnInfoWidget;
+export '/satrun_t_f/satrun_t_f_widget.dart' show SatrunTFWidget;
+export '/m_c_satrun/m_c_satrun_widget.dart' show MCSatrunWidget;
+export '/sat_pi_c_q/sat_pi_c_q_widget.dart' show SatPiCQWidget;
+export '/sat_m_crigh/sat_m_crigh_widget.dart' show SatMCrighWidget;
+export '/sat_t_fright/sat_t_fright_widget.dart' show SatTFrightWidget;
+export '/sat_p_i_cright/sat_p_i_cright_widget.dart' show SatPICrightWidget;
+export '/sat_m_o_v_eto_mc/sat_m_o_v_eto_mc_widget.dart' show SatMOVEtoMcWidget;
+export '/sat_m_o_v_eto_pic/sat_m_o_v_eto_pic_widget.dart'
+    show SatMOVEtoPicWidget;

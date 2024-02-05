@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'uranus_quiz5_widget.dart' show UranusQuiz5Widget;
+import 'sat_p_i_cright_widget.dart' show SatPICrightWidget;
 import 'package:flutter/material.dart';
 
-class UranusQuiz5Model extends FlutterFlowModel<UranusQuiz5Widget> {
+class SatPICrightModel extends FlutterFlowModel<SatPICrightWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
