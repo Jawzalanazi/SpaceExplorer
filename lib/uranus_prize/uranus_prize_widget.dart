@@ -66,23 +66,26 @@ class _UranusPrizeWidgetState extends State<UranusPrizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.06, -0.26),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(8.0),
-                child: Image.asset(
-                  'assets/images/48E61CD3-41FA-4ED7-AC9E-7DB779150413.png',
-                  width: 240.0,
-                  height: 230.0,
-                  fit: BoxFit.cover,
+              alignment: const AlignmentDirectional(0.0, -1.0),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 250.0, 0.0, 0.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/48E61CD3-41FA-4ED7-AC9E-7DB779150413.png',
+                    width: 240.0,
+                    height: 230.0,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.04, -0.79),
+              alignment: const AlignmentDirectional(0.03, -0.74),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                 child: Text(
-                  'YOU WON URANUS STAR\n',
+                  'YOU WON URANUS STAR',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Open Sans',
                         fontSize: 30.0,
@@ -92,12 +95,12 @@ class _UranusPrizeWidgetState extends State<UranusPrizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.07, 0.73),
+              alignment: const AlignmentDirectional(0.05, 0.8),
               child: FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed('Credits');
                 },
-                text: ' Credits',
+                text: 'Credits',
                 options: FFButtonOptions(
                   height: 40.0,
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
@@ -107,6 +110,7 @@ class _UranusPrizeWidgetState extends State<UranusPrizeWidget> {
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Manrope',
                         color: Colors.white,
+                        fontStyle: FontStyle.italic,
                       ),
                   elevation: 3.0,
                   borderSide: const BorderSide(
@@ -118,7 +122,7 @@ class _UranusPrizeWidgetState extends State<UranusPrizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.07, 0.57),
+              alignment: const AlignmentDirectional(0.03, 0.66),
               child: FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed('solarsystem');
@@ -133,6 +137,7 @@ class _UranusPrizeWidgetState extends State<UranusPrizeWidget> {
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Manrope',
                         color: Colors.white,
+                        fontStyle: FontStyle.italic,
                       ),
                   elevation: 3.0,
                   borderSide: const BorderSide(
@@ -144,13 +149,43 @@ class _UranusPrizeWidgetState extends State<UranusPrizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.07, 0.39),
-              child: Text(
-                'Go To',
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Manrope',
-                      fontSize: 20.0,
-                    ),
+              alignment: const AlignmentDirectional(-0.02, 0.44),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+                child: Text(
+                  'Go To',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Open Sans',
+                        fontSize: 20.0,
+                        fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.04, 0.52),
+              child: FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('SaturnWelcome');
+                },
+                text: 'Next Planet',
+                options: FFButtonOptions(
+                  height: 40.0,
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  iconPadding:
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Manrope',
+                        color: Colors.white,
+                      ),
+                  elevation: 3.0,
+                  borderSide: const BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
               ),
             ),
           ],

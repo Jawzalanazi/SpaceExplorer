@@ -74,13 +74,16 @@ class _SatrunTFWidgetState extends State<SatrunTFWidget> {
                 front: Container(
                   width: 87.0,
                   height: 100.0,
-                  decoration: const BoxDecoration(
-                    color: Color(0x036D5FED),
-                    borderRadius: BorderRadius.only(
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).primaryText,
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(12.0),
                       bottomRight: Radius.circular(12.0),
                       topLeft: Radius.circular(12.0),
                       topRight: Radius.circular(12.0),
+                    ),
+                    border: Border.all(
+                      color: FlutterFlowTheme.of(context).primaryText,
                     ),
                   ),
                   child: Stack(
@@ -99,7 +102,7 @@ class _SatrunTFWidgetState extends State<SatrunTFWidget> {
                         ),
                       ),
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(14.0),
                         child: Image.asset(
                           'assets/images/Helper_robot_happy.png',
                           width: 111.0,
@@ -121,11 +124,14 @@ class _SatrunTFWidgetState extends State<SatrunTFWidget> {
                       topLeft: Radius.circular(12.0),
                       topRight: Radius.circular(12.0),
                     ),
+                    border: Border.all(
+                      color: FlutterFlowTheme.of(context).primaryText,
+                    ),
                   ),
                   child: Align(
                     alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      'Strong gravity\nmore heat\n',
+                      '10Km/10Km',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Manrope',
                             color: FlutterFlowTheme.of(context)

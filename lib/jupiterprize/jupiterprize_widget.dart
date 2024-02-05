@@ -72,7 +72,7 @@ class _JupiterprizeWidgetState extends State<JupiterprizeWidget> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/9C9DEFFF-CC0E-443D-8742-C17223290539.png',
+                    'assets/images/222CCE26-8D61-466F-8418-F87969AAD5C3.png',
                     width: 240.0,
                     height: 230.0,
                     fit: BoxFit.cover,
@@ -95,7 +95,7 @@ class _JupiterprizeWidgetState extends State<JupiterprizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.01, 0.76),
+              alignment: const AlignmentDirectional(0.05, 0.8),
               child: FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed('Credits');
@@ -122,7 +122,7 @@ class _JupiterprizeWidgetState extends State<JupiterprizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.01, 0.62),
+              alignment: const AlignmentDirectional(0.03, 0.66),
               child: FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed('solarsystem');
@@ -150,13 +150,42 @@ class _JupiterprizeWidgetState extends State<JupiterprizeWidget> {
             ),
             Align(
               alignment: const AlignmentDirectional(-0.02, 0.44),
-              child: Text(
-                'Go To',
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Open Sans',
-                      fontSize: 20.0,
-                      fontStyle: FontStyle.italic,
-                    ),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+                child: Text(
+                  'Go To',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Open Sans',
+                        fontSize: 20.0,
+                        fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.04, 0.52),
+              child: FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('solarsystem');
+                },
+                text: 'Next Planet',
+                options: FFButtonOptions(
+                  height: 40.0,
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  iconPadding:
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Manrope',
+                        color: Colors.white,
+                      ),
+                  elevation: 3.0,
+                  borderSide: const BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
               ),
             ),
           ],

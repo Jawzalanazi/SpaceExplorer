@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'sat_pi_c_q_model.dart';
@@ -61,7 +62,93 @@ class _SatPiCQWidgetState extends State<SatPiCQWidget> {
                   fontSize: 22.0,
                 ),
           ),
-          actions: const [],
+          actions: [
+            Container(
+              width: 100.0,
+              height: 100.0,
+              decoration: BoxDecoration(
+                color: FlutterFlowTheme.of(context).primaryText,
+                border: Border.all(
+                  color: FlutterFlowTheme.of(context).primaryText,
+                ),
+              ),
+              child: Container(
+                width: 87.0,
+                height: 100.0,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.of(context).primaryText,
+                  borderRadius: const BorderRadius.only(
+                    bottomLeft: Radius.circular(12.0),
+                    bottomRight: Radius.circular(12.0),
+                    topLeft: Radius.circular(12.0),
+                    topRight: Radius.circular(12.0),
+                  ),
+                  border: Border.all(
+                    color: FlutterFlowTheme.of(context).primaryText,
+                  ),
+                ),
+                child: FlipCard(
+                  fill: Fill.fillBack,
+                  direction: FlipDirection.HORIZONTAL,
+                  speed: 400,
+                  front: Container(
+                    width: 87.0,
+                    height: 100.0,
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).primaryText,
+                      borderRadius: const BorderRadius.only(
+                        bottomLeft: Radius.circular(12.0),
+                        bottomRight: Radius.circular(12.0),
+                        topLeft: Radius.circular(12.0),
+                        topRight: Radius.circular(12.0),
+                      ),
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).primaryText,
+                      ),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/images/Helper_robot_happy.png',
+                        width: 111.0,
+                        height: 215.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  back: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).primaryText,
+                      borderRadius: const BorderRadius.only(
+                        bottomLeft: Radius.circular(12.0),
+                        bottomRight: Radius.circular(12.0),
+                        topLeft: Radius.circular(12.0),
+                        topRight: Radius.circular(12.0),
+                      ),
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).primaryText,
+                      ),
+                    ),
+                    child: Align(
+                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      child: Text(
+                        '2*3',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Manrope',
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              fontSize: 12.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
           centerTitle: true,
           elevation: 2.0,
         ),

@@ -53,13 +53,16 @@ class _SatPrizeWidgetState extends State<SatPrizeWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: Stack(
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(8.0),
-              child: Image.asset(
-                'assets/images/Background.jpg',
-                width: 393.0,
-                height: 852.0,
-                fit: BoxFit.cover,
+            Align(
+              alignment: const AlignmentDirectional(0.0, 0.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/Background.jpg',
+                  width: 393.0,
+                  height: 852.0,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             Align(
@@ -78,11 +81,11 @@ class _SatPrizeWidgetState extends State<SatPrizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(0.11, -0.74),
+              alignment: const AlignmentDirectional(0.03, -0.74),
               child: Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                 child: Text(
-                  'YOU WON STARUN STAR\n',
+                  'YOU WON SATURN STAR',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Open Sans',
                         fontSize: 30.0,
@@ -92,7 +95,7 @@ class _SatPrizeWidgetState extends State<SatPrizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.06, 0.78),
+              alignment: const AlignmentDirectional(0.05, 0.8),
               child: FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed('Credits');
@@ -107,6 +110,7 @@ class _SatPrizeWidgetState extends State<SatPrizeWidget> {
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Manrope',
                         color: Colors.white,
+                        fontStyle: FontStyle.italic,
                       ),
                   elevation: 3.0,
                   borderSide: const BorderSide(
@@ -118,12 +122,53 @@ class _SatPrizeWidgetState extends State<SatPrizeWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(-0.04, 0.62),
+              alignment: const AlignmentDirectional(0.03, 0.66),
               child: FFButtonWidget(
                 onPressed: () async {
                   context.pushNamed('solarsystem');
                 },
-                text: 'Solar System\n',
+                text: 'Solar System',
+                options: FFButtonOptions(
+                  height: 40.0,
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  iconPadding:
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                        fontFamily: 'Manrope',
+                        color: Colors.white,
+                        fontStyle: FontStyle.italic,
+                      ),
+                  elevation: 3.0,
+                  borderSide: const BorderSide(
+                    color: Colors.transparent,
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(-0.02, 0.44),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+                child: Text(
+                  'Go To',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Open Sans',
+                        fontSize: 20.0,
+                        fontStyle: FontStyle.italic,
+                      ),
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.04, 0.52),
+              child: FFButtonWidget(
+                onPressed: () async {
+                  context.pushNamed('WelcomeJupiter');
+                },
+                text: 'Next Planet',
                 options: FFButtonOptions(
                   height: 40.0,
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),

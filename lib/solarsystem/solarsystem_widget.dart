@@ -137,21 +137,30 @@ class _SolarsystemWidgetState extends State<SolarsystemWidget> {
               ),
               Align(
                 alignment: const AlignmentDirectional(0.2, 0.74),
-                child: Hero(
-                  tag: 'ura',
-                  transitionOnUserGestures: true,
-                  child: ClipRRect(
-                    borderRadius: const BorderRadius.only(
-                      bottomLeft: Radius.circular(0.0),
-                      bottomRight: Radius.circular(0.0),
-                      topLeft: Radius.circular(0.0),
-                      topRight: Radius.circular(0.0),
-                    ),
-                    child: Image.asset(
-                      'assets/images/Uranus.png',
-                      width: 98.0,
-                      height: 104.0,
-                      fit: BoxFit.fill,
+                child: InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    context.pushNamed('WelcomeToUranus');
+                  },
+                  child: Hero(
+                    tag: 'ura',
+                    transitionOnUserGestures: true,
+                    child: ClipRRect(
+                      borderRadius: const BorderRadius.only(
+                        bottomLeft: Radius.circular(0.0),
+                        bottomRight: Radius.circular(0.0),
+                        topLeft: Radius.circular(0.0),
+                        topRight: Radius.circular(0.0),
+                      ),
+                      child: Image.asset(
+                        'assets/images/Uranus.png',
+                        width: 98.0,
+                        height: 104.0,
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                 ),
