@@ -10,11 +10,17 @@ Our game shines because of our vision to make learning fun; Space Explorer is th
 ⋆｡°✩ How can I get started with the project?
   The project is built to run on the Flutter _stable_ release.
 ⋆｡°✩ Who maintains and contributes to the project?
+
   Supervisor: Dr. Lamees Alhazzaa   ͙͘͡★ ͙͘͡★͙͘͡
+  
    Shaden Almudbal (Scrum Master)-͟͟͞☆
-      Heba Almutiri -͟͟͞☆
+  
+   Heba Almutiri -͟͟͞☆
+
+   Jawza Alanazi-͟͟͞☆
+      
    Lara Aleidan͟͟͞☆
-  Jawza Alanazi-͟͟͞☆
+  
   Maha Algahtani.-͟͟͞☆ 
                                                    ˗ˏˋ ★ ˎˊ˗
 
