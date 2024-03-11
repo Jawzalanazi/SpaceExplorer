@@ -1,7 +1,8 @@
 
-                                                   ˗ˏˋ ★ ˎˊ˗
+ ˗ˏˋ ★ ˎˊ˗
+                                                   
 
-                                                 SPACE EXPLORER
+ SPACE EXPLORER
 
 ⋆｡°✩ What the project does?
 Space Explorer is a game designed to educate and entertain children ages 6-12 about the solar system.
@@ -25,5 +26,6 @@ Our game shines because of our vision to make learning fun; Space Explorer is th
    Lara Aleidan͟͟͞☆
   
   Maha Algahtani.-͟͟͞☆ 
+  
                                                    ˗ˏˋ ★ ˎˊ˗
 
